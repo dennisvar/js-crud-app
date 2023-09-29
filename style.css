@@ -1,0 +1,125 @@
+/* FORM */
+.customer-form {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e f"
+        "g h"
+        "i j";
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    width: fit-content;
+    margin: auto;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.customer-form label[for="fname"] { grid-area: a; white-space: nowrap; }
+#fname { grid-area: b; }
+
+.customer-form label[for="lname"] { grid-area: c; white-space: nowrap; }
+#lname { grid-area: d; }
+
+.customer-form label[for="email"] { grid-area: e; }
+#email { grid-area: f; }
+
+.customer-form label[for="phone"] { grid-area: g; }
+#phone { grid-area: h; }
+
+.customer-form input[type="submit"] { grid-area: i; justify-self: end;}
+.customer-form input[type="reset"] { grid-area: j; justify-self: start;}
+
+/* TABLE */
+.customer-table, .customer-table th, .customer-table td {
+    border: 1px solid #bdbdbd;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    padding: 3px;
+}
+
+/* BUTTONS */
+.create-btn {
+    background-color: #81bb00;
+    border: 1px solid #74a800;
+    border-radius: 2px;
+    padding: 2px 7px 2px 7px;
+    color: #ffffff;
+}
+.create-btn:hover {
+    background-color: #79af00;
+    border: 1px solid #6d9d00;
+}
+.create-btn:active {
+    background-color: #8ece00;
+    border: 1px solid #82bc00;
+}
+
+.read-btn {
+    background-color: #00a5d1;
+    border: 1px solid #0094bc;
+    border-radius: 2px;
+    padding: 2px 7px 2px 7px;
+    color: #ffffff;
+}
+.read-btn:hover {
+    background-color: #0097c0;
+    border: 1px solid #0088ac;
+}
+.read-btn:active {
+    background-color: #00b8e9;
+    border: 1px solid #00a8d5;
+}
+
+.update-btn {
+    background-color: #f69005;
+    border: 1px solid #dd8104;
+    border-radius: 2px;
+    padding: 2px 7px 2px 7px;
+    color: #ffffff;
+}
+.update-btn:hover {
+    background-color: #df8304;
+    border: 1px solid #c97503;
+}
+.update-btn:active {
+    background-color: #fa9a18;
+    border: 1px solid #f68f04;
+}
+
+.delete-btn {
+    background-color: #e5432c;
+    border: 1px solid #da321a;
+    border-radius: 2px;
+    padding: 2px 7px 2px 7px;
+    color: #ffffff;
+}
+.delete-btn:hover {
+    background-color: #df331b;
+    border: 1px solid #c82e17;
+}
+.delete-btn:active {
+    background-color: #e7523c;
+    border: 1px solid #e43c24;
+}
+
+.auth-btn {
+    background-color: #97369c;
+    border: 1px solid #752a79;
+    border-radius: 2px;
+    padding: 2px 7px 2px 7px;
+    color: #ffffff;
+}
+.auth-btn:hover {
+    background-color: #842f89;
+    border: 1px solid #66246a;
+}
+.auth-btn:active {
+    background-color: #b03fb6;
+    border: 1px solid #923497;
+}
